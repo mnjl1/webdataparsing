@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 public class WebDataExtracting {
     public static void main(String[] args) {
+
         final String ABOUT_YOU_URL = "http://www.aboutyou.de/suche?term=";
         Document searchByKeyWordResult;
         Offer offer;
@@ -57,6 +58,8 @@ public class WebDataExtracting {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        System.out.println("Amount of extracted products: " +offerList.size());
 
     }
 }

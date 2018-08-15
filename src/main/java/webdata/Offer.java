@@ -1,44 +1,19 @@
 package webdata;
 
-import com.thoughtworks.xstream.annotations.XStreamAlias;
-import com.thoughtworks.xstream.annotations.XStreamAsAttribute;
-
 import java.util.Objects;
 
-@XStreamAlias("offer")
 public class Offer {
-    @XStreamAlias("articleID")
-    @XStreamAsAttribute
     private String articleId;
-
-    @XStreamAlias("product name")
-    @XStreamAsAttribute
     private String productName;
-
-    @XStreamAlias("brand")
-    @XStreamAsAttribute
     private String brand;
-
-    @XStreamAlias("color")
-    @XStreamAsAttribute
     private String color;
-
-    @XStreamAlias("price")
-    @XStreamAsAttribute
     private String price;
-
-    @XStreamAlias("initialPrice")
-    @XStreamAsAttribute
     private String initialPrice;
-
-    @XStreamAlias("description")
-    @XStreamAsAttribute
     private String description;
     private String shippingPrice;
 
     public Offer(){
     }
-
 
     public Offer(String articleId, String productName, String brand, String color, String price,
                  String initialPrice, String description) {
